@@ -1,0 +1,454 @@
+* {
+    --width: 1024px;
+    --height-header: 100px;
+    --negative-height-header: -100px;
+    font-family: Arial;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    scroll-behavior: smooth;
+    transition: .5s all;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgb(18, 84, 238);
+}
+h1 {
+    font-size: 32px;
+    width: 60%;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+#buy, #why-us, #reviews {
+    position: absolute;
+    top: var(--negative-height-header);
+    left: 0;
+}
+.container {
+    position: relative;
+    margin: 0.3em auto 0;
+    max-width: var(--width);
+}
+header {
+    position: fixed;
+    top: 0;
+    width: var(--width);
+    background-color: #fff;
+    z-index: 1;
+}
+main {
+    margin-top: var(--height-header);
+}
+header .wrapper, footer .wrapper {
+    height: var(--height-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo, footer .logo {
+    height: 100%;
+}
+
+header .left-side, footer .left-side {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+header .list-company, footer .list-company {
+    padding-left: 1em;
+}
+.place-on-order-subtitle {
+    font-size: 1.4em;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+header .nav-list > li {
+    padding-left: 4em;
+    font-size: 1.4em;
+}
+
+footer .nav-list > li {
+    padding-left: 2.5em;
+}
+
+.section-container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+section {
+    height: 512px;
+    margin: 10% 0;
+    position: relative;
+}
+
+.place-on-order-subtitle {
+    margin-top: 0.5em;
+}
+.place-on-order-wrapper > .win-image {
+    width: 60%;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+}
+.pos-abs-r-b {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+}
+.order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f4f4f4;
+    font-size: 1.5em;
+    background-color: #03218e;
+    min-width: 300px;
+    max-width: 300px;
+    height: 90px;
+    border-radius: 40px;
+}
+.order-btn:hover {
+    color: #f4f4f4;
+}
+.intro-title {
+    text-align: center;
+    font-size: 2em;
+}
+
+.benefits-list {
+    margin-top: 3em;
+    display: flex;
+    gap: 3em;
+}
+
+.top-part {
+    display: flex;
+    align-items: center;
+}
+.benefit-item {
+    display: flex;
+    flex-direction: column;
+}
+.benefit-item > .top-part > .icon > img {
+    height: 90px;
+    padding-right: 0.8em;
+}
+.benefit-descr {
+    height: 280px;
+    margin-top: 2em;
+    text-align: justify;
+    border-radius: 0.5em;
+    line-height: 1.4em;
+    padding: 1em;
+    font-size: 0.9em;
+    background-color: #03218e;
+    color: #f4f4f4;
+}
+.place-on-order-2 {
+    position: relative;
+}
+.place-on-order-2 > .order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.place-on-order-2 > .intro-title {
+    position: absolute;
+    right: 0;
+    text-align: end;
+    width: 75%;
+}
+.place-on-order-2 > .wrapper-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.place-on-order-2 > .wrapper-img > img {
+    display: inline-block;
+    width: 50%;
+    margin-top: calc(3em + 50px);
+}
+
+.place-on-order-2 > .order-btn {
+    margin-top: 2em;
+}
+
+.products > .subtitle {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 0.5em;
+}
+.products > .wrapper {
+    margin-top: 1em;
+    display: flex;
+}
+.products > .wrapper > .wrapper-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.products > .wrapper > .wrapper-item {
+    display: flex;
+    align-items: center;
+}
+.products > .wrapper > .wrapper-item > img {
+    width: 90%;
+}
+.products > .wrapper > .wrapper-item > .more-details {
+    min-width: 90%;
+}
+
+.reviews > .wrapper {
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.reviews > .wrapper > .left-side > .reviews-list,
+.reviews > .wrapper > .right-side,
+.reviews > .wrapper > .left-side > .more-reviews > button {
+    margin-top: 1em;
+    text-align: center;
+    background-color: #d9d9d9;
+    padding: 0.4em 0 ;
+    border-radius: 1em;
+}
+
+.reviews > .wrapper > .left-side > .reviews-list > .review-item,
+.reviews > .wrapper > .right-side > .wrapper-side {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.reviews
+    > .wrapper
+    > .left-side
+    > .reviews-list
+    > .review-item
+    > .wrapper-descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+}
+.reviews > .wrapper > .left-side > .reviews-list {
+    position: relative;
+}
+.reviews
+    > .wrapper
+    > .left-side
+    > .reviews-list
+    > .review-item
+    > .wrapper-descr
+    > .descr {
+    font-size: 0.75em;
+}
+.reviews > .wrapper > .left-side > .more-reviews > button {
+    border: none;
+    width: 100%;
+    height: 2em;
+    cursor: pointer;
+}
+.reviews > .wrapper > .left-side > .reviews-list > .review-item > .avatar {
+    width: 8%;
+    height: 8%;
+}
+
+.reviews > .wrapper > .right-side > .wrapper-side > .right-side-title {
+    font-size: 0.8em;
+    text-align: left;
+}
+.reviews > .wrapper > .right-side  {
+    align-self: flex-start;
+}
+.reviews > .wrapper > .right-side > .wrapper-side {
+    flex-direction: column;
+    gap: 1em;
+}
+.reviews > .wrapper > .right-side > .wrapper-side > .wrapper {
+    display: flex;
+    align-self: flex-start;
+    gap: 1em;
+}
+.reviews > .wrapper > .right-side > .wrapper-side > .wrapper > .wrapper-descr {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    text-align: left;
+}
+.reviews > .wrapper > .right-side > .wrapper-side > .wrapper > .wrapper-descr > .count-of-reviews {
+    font-size: 0.8em;
+}
+.reviews > .wrapper > .right-side > .wrapper-side > .wrapper > .company-logo {
+    object-fit: cover;
+    height: 70px;
+    max-width: 60%;
+}
+.place-on-order-3 > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 2;
+}
+.place-on-order-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.place-on-order-3 > .title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2em;
+}
+.place-on-order-3 > .title-wrapper > h2, .place-on-order-3 > .title-wrapper > h3 {  
+    width: 80%;
+    text-align: right;
+}
+.place-on-order-3 > .wrapper > .order-btn {
+    flex: 0 0 60%;
+    align-self: flex-end;
+}
+.place-on-order-3 > .wrapper > .office-img {
+    width: 50%;
+    flex: 0 0 40%;
+}
+footer {
+    position: relative;
+}
+.copy {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+.hamburger-menu {
+    display: none;
+}
+@media (max-width: 1024px) {
+    section {
+        min-height: 512px;
+        height: auto;
+    }
+    .benefits-list {
+        flex-wrap: wrap;
+    }
+    .benefit-descr {
+        height: 100px;
+    }
+    .section-container {
+        max-width: 95%;       
+    }
+    header {
+        width:calc(100% - 0.5em);
+    }
+    header .nav-list > li {
+        padding-left: 1.5em;
+    }
+    header .nav-list li:last-child{
+        padding-right: 0.5em;
+    }
+    footer .nav-list > li {
+        padding-left: 1.2em;
+        padding-right: 0.5em;
+    }
+}
+
+@media (max-width:768px) {
+    * {
+        font-size: 16px;
+    }    
+    .order-btn {
+        min-width: 200px;
+        max-width: 200px;
+    }
+    .reviews .wrapper {
+        flex-wrap: wrap;
+    }
+    .reviews .right-side-title {
+        font-size: 1.4em !important;
+    }
+    .products .wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+    header .nav-list {
+        position: fixed;
+        left: -100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3em;
+        height: 100vh;
+        width: 100vw;
+        background-color: #fff;
+    }
+    header .nav-list a, header .nav-list strong {
+        font-size: 24px;
+    }
+    header .nav-list.show { 
+        left: 0;
+    }
+    .hamburger-menu {
+        position: relative;
+        display: block;
+        padding-right: 4em;
+        z-index: 2;
+    }
+    footer .nav-list > li {
+        display: none;
+    }
+    footer .nav-list li:last-child{
+        display: block;
+        padding-right: 4em;
+    }
+}
+@media (max-width:576px){
+    h1, .place-on-order-2 .intro-title, .place-on-order-3 > .title-wrapper >  .intro-title {
+        width: 100%;
+        font-size: 1.5em;
+    }
+    .order-btn .more-details {
+        width: 100%;
+    }
+    section {
+        min-height: 320px;
+    }
+    .order-btn {
+        width: 100%;
+    }
+    .office-img {
+        position: absolute;
+        right: 0;
+        bottom: 4em;
+        z-index: -1;
+    }
+    .hamburger-menu {
+        padding: 0;
+    }
+    footer .list-company {
+        display: none;
+    }
+    footer .nav-item {
+        padding: 0 !important;
+    }
+}
